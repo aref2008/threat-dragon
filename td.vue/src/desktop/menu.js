@@ -23,9 +23,10 @@ import rus from '@/i18n/ru.js';
 import spa from '@/i18n/es.js';
 import ukr from '@/i18n/uk.js';
 import zho from '@/i18n/zh.js';
+import arb from '@/i18n/ar.js';
 
-const messages = { deu, ell, eng, fin, fra, hin, por, rus, spa, ukr, zho };
-const languages = [ 'deu', 'ell', 'eng', 'fin', 'fra', 'hin', 'por', 'rus', 'spa', 'ukr', 'zho' ];
+const messages = { deu, ell, eng, fin, fra, hin, por, rus, spa, ukr, zho, arb };
+const languages = [ 'deu', 'ell', 'eng', 'fin', 'fra', 'hin', 'por', 'rus', 'spa', 'ukr', 'zho', 'arb' ];
 const defaultLanguage = 'eng';
 var language = defaultLanguage;
 

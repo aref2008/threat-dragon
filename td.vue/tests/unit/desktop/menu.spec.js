@@ -10,6 +10,7 @@ import rus from '@/i18n/ru.js';
 import spa from '@/i18n/es.js';
 import ukr from '@/i18n/uk.js';
 import zho from '@/i18n/zh.js';
+import arb from '@/i18n/ar.js';
 
 describe('desktop/menu.js', () => {
 
@@ -349,6 +350,12 @@ describe('desktop/menu.js', () => {
             it('should provide translation for zho', () => {
                 menu.setLocale('zho');
                 const helpItems = menu.getMenuTemplate().find((item) => item.label === zho.desktop.help.heading);
+                expect(helpItems).toBeDefined();
+            });
+
+            it('should provide translation for arb', () => {
+                menu.setLocale('arb');
+                const helpItems = menu.getMenuTemplate().find((item) => item.label === arb.desktop.help.heading);
                 expect(helpItems).toBeDefined();
             });
 

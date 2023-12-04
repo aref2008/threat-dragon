@@ -16,6 +16,7 @@ import por from './pt.js';
 import rus from './ru.js';
 import ukr from './uk.js';
 import zho from './zh.js';
+import arb from './arb.js';
 
 Vue.use(VueI18n);
 let i18n = null;
@@ -24,7 +25,7 @@ const get = () => {
     if (i18n === null) {
         i18n = new VueI18n({
             locale: 'eng',
-            messages: { deu, ell, eng, spa, fin, fra, hin, por, rus, ukr, zho }
+            messages: { deu, ell, eng, spa, fin, fra, hin, por, rus, ukr, zho, arb }
         });
     }
     return i18n;
